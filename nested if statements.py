@@ -19,7 +19,16 @@ dollarValue = float(dollarString)
 
 # Write your code here
 # A productivity score is dividing an employees transactions dollar value by the number of transactions and then dividing the result by the number of shifts worked
-bonus = (dollarValue/numTransactions)/
+productivityScore = ((dollarValue/numTransactions)/numShifts)
+
+if productivityScore >= 200:
+    bonus = 200
+elif productivityScore <= 30:
+    bonus = 50.00
+elif productivityScore >= 31 and <= 69:
+    bonus = 75
+else productivityScore >= 70 and <= 199:
+    bonus = 100.00
 
 # Output.
 # print(productivityScore)

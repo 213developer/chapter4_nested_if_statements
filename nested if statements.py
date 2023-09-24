@@ -22,9 +22,9 @@ productivityScore = (dollarValue/numTransactions)/numShifts
 
 if productivityScore >= 200.00:
     bonus = BONUS_4
-elif productivityScore >= 70 and <= 199:
+elif (productivityScore >= 70) and (productivityScore <= 199):
     bonus = BONUS_3
-elif productivityScore >= 31 and <= 69:
+elif (productivityScore >= 31) and (productivityScore <= 69):
     bonus = BONUS_2
 elif productivityScore <= 30:
     bonus = BONUS_1
